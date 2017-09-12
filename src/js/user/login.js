@@ -1,5 +1,6 @@
 $("#login-form").ajaxForm({
     success:function(data){
+        console.log(data);
         if(data.code==200){
             alert("登录成功！");
             location.href ="/dist"
